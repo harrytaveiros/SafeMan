@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeMan - Saúde Masculina em Todas as Fases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img class="logo-icon" src="Assets/logo1.png"></img>
+                    <span class="logo-text">SafeMan</span>
+                </div>
+
+                 <nav class="nav-desktop">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#fases" class="nav-link">Fases da Vida</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <button class="btn btn-primary"><a href="#footer" class="nav-link">Grupo MVP</a></button>
+                </nav>
+
+                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+
+            <nav class="nav-mobile" id="navMobile">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#fases" class="nav-link">Fases da Vida</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <button class="btn btn-primary"><a href="#footer" class="nav-link">Grupo MVP</a></button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+         <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="badge">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            <span>Saúde em todas as fases</span>
+                        </div>
+
+                        <h1 class="hero-title">Cuidando da saúde do homem</h1>
+
+                        <p class="hero-description">
+                            Informações essenciais sobre saúde masculina para cada fase da vida. Da infância à terceira idade, estamos aqui para orientar você.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg">
+                                <a href="#fases" class="nav-link">Explorar Conteúdo</a>
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            <button class="btn btn-outline btn-lg"><a href="#sobre" class="nav-link">Saiba Mais</a></button>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-wrapper">
+                        <div class="hero-image">
+                            <img src="Assets/imginicio.jpg" alt="Homem saudável">
+                        </div>
+                        <div class="hero-badge">
+                            <div class="badge-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="badge-number">100%</p>
+                                <p class="badge-text">Confiável</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <section id="fases" class="life-stages">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Cuidados em Cada Fase da Vida</h2>
+                    <p class="section-description">
+                        Cada etapa da vida requer atenção especial. Conheça os principais cuidados para manter a saúde em dia.
+                    </p>
+                </div>
+
+                <div class="stages-grid">
+                    <a href="infancia.html" class="link-card">
+                     <div class="stage-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-title">Infância</h3>
+                                <p class="card-age">0-12 anos</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Desenvolvimento saudável, vacinação, nutrição adequada e acompanhamento pediátrico regular.
+                            </p>
+                            <div class="card-tips">
+                                <p class="tips-title">Principais cuidados:</p>
+                                <ul class="tips-list">
+                                    <li>Calendário de vacinação completo</li>
+                                    <li>Alimentação balanceada e nutritiva</li>
+                                    <li>Estímulo ao desenvolvimento motor</li>
+                                    <li>Consultas pediátricas regulares</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                                            </a>
+                                            
+                     <a href="adolescencia.html" class="link-card">
+                    <div class="stage-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-title">Adolescência</h3>
+                                <p class="card-age">13-19 anos</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Mudanças hormonais, saúde mental, educação sexual e prevenção de comportamentos de risco.
+                            </p>
+                            <div class="card-tips">
+                                <p class="tips-title">Principais cuidados:</p>
+                                <ul class="tips-list">
+                                    <li>Diálogo aberto sobre mudanças corporais</li>
+                                    <li>Educação sexual responsável</li>
+                                    <li>Atenção à saúde mental</li>
+                                    <li>Prática regular de atividades físicas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                     <a href="adulto.html" class="link-card">
+                    <div class="stage-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                    <path d="M16 21V5a2 2 2 00-2-2h-4a2 2 0 00-2 2v16"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-title">Vida Adulta</h3>
+                                <p class="card-age">20-59 anos</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Prevenção de doenças, check-ups regulares, saúde cardiovascular e equilíbrio vida-trabalho.
+                            </p>
+                            <div class="card-tips">
+                                <p class="tips-title">Principais cuidados:</p>
+                                <ul class="tips-list">
+                                    <li>Exames preventivos anuais</li>
+                                    <li>Controle de pressão e colesterol</li>
+                                    <li>Alimentação equilibrada</li>
+                                    <li>Gerenciamento do estresse</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                     <a href="idoso.html" class="link-card">
+                    <div class="stage-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="card-title">Terceira Idade</h3>
+                                <p class="card-age">60+ anos</p>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Qualidade de vida, prevenção de quedas, saúde cognitiva e acompanhamento médico especializado.
+                            </p>
+                            <div class="card-tips">
+                                <p class="tips-title">Principais cuidados:</p>
+                                <ul class="tips-list">
+                                    <li>Monitoramento de doenças crônicas</li>
+                                    <li>Exercícios de baixo impacto</li>
+                                    <li>Estímulo cognitivo constante</li>
+                                    <li>Suporte social e familiar</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </section>
+    
+         <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="about-title">Por que a saúde masculina importa?</h2>
+                        <p class="about-text">
+                            Historicamente, os homens tendem a procurar menos os serviços de saúde e negligenciar cuidados preventivos. O SafeMan existe para mudar essa realidade, oferecendo informações acessíveis e incentivando o autocuidado em todas as fases da vida.
+                        </p>
+                        <p class="about-text">
+                            A prevenção e o diagnóstico precoce são fundamentais para garantir uma vida longa e saudável. Cuidar da saúde não é sinal de fraqueza, mas de inteligência e responsabilidade consigo mesmo e com quem você ama.
+                        </p>
+                    </div>
+
+                    <div class="features">
+                         <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Informação Confiável</h3>
+                                <p class="feature-description">
+                                    Conteúdo baseado em evidências científicas e orientações médicas atualizadas.
+                                </p>
+                            </div>
+                        </div>
+
+                         <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Prevenção é Chave</h3>
+                                <p class="feature-description">
+                                    Foco em cuidados preventivos para evitar doenças e manter a qualidade de vida.
+                                </p>
+                            </div>
+                        </div>
+
+                         <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="feature-title">Para Todas as Idades</h3>
+                                <p class="feature-description">
+                                    Orientações específicas para cada fase da vida masculina, da infância à velhice.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img class="logo-icon" src="Assets/logo1.png">
+                        <span class="logo-text">SafeMan</span>
+                    </div>
+                    <p class="footer-description">
+                        Cuidando da saúde masculina em todas as fases da vida.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#fases">Fases da Vida</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Recursos</h4>
+                    <ul>
+                        <li><a href="#">Artigos</a></li>
+                        <li><a href="#">Dicas de Saúde</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-heading">Criadores - Grupo MVP</h4>
+                    <ul class="list-2-cols">
+                        <li>Harry Rocha</li>
+                        <li>Iandro Augusto</li>
+                        <li>Erick Emanuel</li>
+                        <li>Guilerme Sousa</li>
+                        <li>Brunno Lima</li>
+                        <li>Emerson Melo</li>
+                        <li>Guilherme Augusto</li>
+                        <li>Enzo Gabriel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 SafeMan. Todos os direitos reservados.</p>
+                <p>Este site é apenas informativo. Sempre consulte um profissional de saúde.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="authModalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="closeAuthModal">&times;</button>
+            <h2 class="modal-title" id="authTitle">Login</h2>
+
+            <p class="error-message" id="authErrorMessage"></p>
+
+            <form class="auth-form" id="loginForm">
+                <div class="input-group">
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+            </form>
+
+            <form class="auth-form" id="registerForm" style="display: none;">
+                <div class="input-group">
+                    <label for="registerName">Nome Completo</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerEmail">E-mail</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerPassword">Criar Senha</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Cadastrar</button>
+            </form>
+
+            <div class="switch-auth">
+                <span id="switchText">Não tem conta? <a href="#" id="switchToRegister">Cadastre-se</a></span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
