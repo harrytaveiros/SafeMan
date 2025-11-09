@@ -53,6 +53,74 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 })
 
 /* -------------------------------------------
+   NOVO: Lógica de Pesquisa
+   ------------------------------------------- */
+
+const searchForm = document.getElementById('searchForm');
+const searchInput = document.getElementById('searchInput');
+const suggestionTags = document.querySelectorAll('.suggestion-tag');
+
+// Mapa de palavras-chave para redirecionamento:
+const searchMap = {
+    'infancia': 'infancia.html',
+    'adolescencia': 'adolescencia.html',
+    'puberdade': 'adolescencia.html',
+    'adulto': 'adulto.html',
+    'terceira idade': 'idoso.html',
+    'idoso': 'idoso.html',
+    'próstata': 'idoso.html', 
+    'prostata': 'idoso.html',
+    'saúde mental': 'adolescencia.html',
+    'saude mental': 'adolescencia.html',
+    'vacinação': 'infancia.html',
+    'vacinacao': 'infancia.html',
+    'colesterol': 'adulto.html',
+    'estresse': 'adulto.html',
+    'coração': 'adulto.html',
+    'cardiovascular': 'adulto.html',
+    'nutricao': 'infancia.html',
+    'nutrição': 'infancia.html',
+};
+
+function performSearch(searchTerm) {
+    const lowerCaseTerm = searchTerm.toLowerCase().trim();
+    
+    if (lowerCaseTerm === '') return;
+
+    let targetUrl = null;
+    
+    for (const keyword in searchMap) {
+        if (lowerCaseTerm.includes(keyword) || keyword.includes(lowerCaseTerm)) {
+            targetUrl = searchMap[keyword];
+            break;
+        }
+    }
+
+    if (targetUrl) {
+        window.location.href = targetUrl;
+    } else {
+        alert(`Não encontramos um resultado direto para "${searchTerm}". Por favor, explore as Fases da Vida.`);
+    }
+}
+
+// Submissão do formulário de pesquisa
+searchForm && searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    performSearch(searchInput.value);
+});
+
+// Clique nas sugestões
+suggestionTags.forEach(tag => {
+    tag.addEventListener('click', (e) => {
+        e.preventDefault();
+        const term = tag.getAttribute('data-term');
+        searchInput.value = term; 
+        performSearch(term);
+    });
+});
+
+
+/* -------------------------------------------
    Lógica de Autenticação (Simulação)
    ------------------------------------------- */
 
