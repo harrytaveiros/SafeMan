@@ -312,7 +312,7 @@
     </main>
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -339,7 +339,7 @@
                     <ul>
                         <li><a href="#">Artigos</a></li>
                         <li><a href="#">Dicas de Saúde</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Problemas diarios</a></li>
                     </ul>
                 </div>
 
@@ -365,9 +365,50 @@
         </div>
     </footer>
 
+
+    <div id="authModalOverlay" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="closeAuthModal">&times;</button>
+            <h2 class="modal-title" id="authTitle">Login</h2>
+
+            <p class="error-message" id="authErrorMessage"></p>
+
+            <form class="auth-form" id="loginForm">
+                <div class="input-group">
+                    <label for="loginEmail">E-mail</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="loginPassword">Senha</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+            </form>
+
+            <form class="auth-form" id="registerForm" style="display: none;">
+                <div class="input-group">
+                    <label for="registerName">Nome Completo</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerEmail">E-mail</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="input-group">
+                    <label for="registerPassword">Criar Senha</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Cadastrar</button>
+            </form>
+
+            <div class="switch-auth">
+                <span id="switchText">Não tem conta? <a href="#" id="switchToRegister">Cadastre-se</a></span>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
     <script>
-        setupPage('infancia'); // pageId única para esta página
+        setupPage('infancia'); // Mantenha o ID da página correto
     </script>
 </body>
 </html>
